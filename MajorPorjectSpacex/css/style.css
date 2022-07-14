@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import './variable.css';
+@import './utlities.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialised;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pure);
+}
+
+header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('../img/sunrise.jpg');
+    height: 120vh;
+    width: 204vh;
+
+}
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-right a {
+    text-decoration: none;
+    color: var(--pure);
+    margin-right: 30px;
+
+}
+
+header nav .nav-right a:hover {
+    border-bottom: 0.5px solid var(--pure);
+}
+
+header nav .nav-right .search>div {
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right .search>div input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+header nav .nav-right .search>div img {
+    padding-right: 16px;
+}
+
+
+.social div {
+    border: 0.5px solid var(--pure);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social svg path {
+    fill: var(--pure);
+}
+
+.social div:hover svg path {
+    fill: var(--dark);
+    transition: all .5s ease-in-out;
+}
+
+.social div:hover {
+    background: var(--pure);
+}
+
+.hero {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--gray);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.hero .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+}
+
+
+.hero .cta h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero .cta div {
+    flex: 1;
+}
+
+.hero .cta .left-section {
+    padding: 0px 60px 0px 60px;
+}
+
+
+.hero .cta .right-section img {
+    height: 70vh;
+}
+
+.btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: 2px solid silver;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid silver;
+}
+.ct{
+    
+    position: relative;
+    color: var(--pure);
+}
+.imgdiv{
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+}
+.textdiv{
+    position: absolute;
+    padding: 450px 700px 0px 30px;
+}
+
+.textdiv h1{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.textdiv button{
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: 2px solid silver;
+    margin-left: 10px;
+}
+
+.textdiv button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid silver;
+}
+.imgdiv img {
+    height: 120vh;
+    width: 204vh;
+    border-top: 1px solid gray;
+    filter: brightness(00%) , opacity(0.4);
+}
+
+
+.ct1{
+    margin: 0 px auto;
+    background-color: yellow;
+
+}
